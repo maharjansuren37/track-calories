@@ -23,6 +23,16 @@ namespace TrackCalories.Controllers
             return View();
         }
 
+        public IActionResult CreateEditCalories() 
+        {
+            return View();
+        }
+
+        public IActionResult CreateEditCaloriesForm(Calories model) 
+        {
+            return RedirectToAction("Calories");
+        }
+
         public IActionResult Privacy()
         {
             return View();
